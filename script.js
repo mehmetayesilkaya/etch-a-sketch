@@ -22,10 +22,14 @@ function createGrid(value) {
     box.style.width = 100 / value + '%';
     box.style.height = 100 / value + '%';
     container.appendChild(box);
+    let currentOpacity = 0.1;
 
     box.addEventListener('mouseenter', () => {
-      box.style.backgroundColor = 'red';
-      box.style.border = 'solid black';
+      let r = Math.floor(Math.random() * 256);
+      let g = Math.floor(Math.random() * 256);
+      let b = Math.floor(Math.random() * 256);
+      box.style.backgroundColor = `rgba(${r}, ${g}, ${b}, ${currentOpacity})`;
+      currentOpacity += 0.1;
     });
   }
 }
