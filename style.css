@@ -16,19 +16,17 @@ h1 {
   margin-bottom: 48px;
 }
 
-.resetBtn {
+.gridBtn {
   margin-bottom: 48px;
 }
 
 #container {
   display: flex;
   flex-wrap: wrap;
-  width: 640px;
-  height: 640px;
+  width: 720px;
+  height: 720px;
 }
 
 .box {
-  width: 6.25%;
-  height: 6.25%;
   border: solid black 1px;
 }
